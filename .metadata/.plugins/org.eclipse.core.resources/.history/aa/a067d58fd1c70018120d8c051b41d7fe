@@ -11,7 +11,7 @@ public class nameDrawer extends JApplet
 	g2.setColor(Color.BLUE);
 	g2.draw(box);
 	g2.setColor(Color.RED);
-	g2.drawString("Adam Bock", 300, 300);
+	g2.drawString("Adam Bock is meager compared to tomas", 300, 300);
 	}
 	
 }
