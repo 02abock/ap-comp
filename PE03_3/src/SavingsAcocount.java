@@ -9,6 +9,10 @@ public class SavingsAcocount {
 		balance= 0;
 		intrest=.10;
 	}
+	public SavingsAcocount (double initialBalance)
+	{
+		balance= initialBalance;
+	}
 	public void dposit(double amount)
 	{
 		balance+= amount;
@@ -26,7 +30,7 @@ public class SavingsAcocount {
 	}
 	
 	
-	double balance;
-	double intrest;
+	private double balance;
+	private double intrest;
 	}
 	
