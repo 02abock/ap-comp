@@ -26,7 +26,7 @@ public class VotingMachine {
 	{
 		LocalDate localDate= LocalDate.now();
 		LocalDate firstTeusday= localDate.with(firstInMonth(DayOfWeek.TUESDAY));
-		DateTimeFormatter formats=DateTimeFormatter.ofPattern("mm");
+		DateTimeFormatter formats=DateTimeFormatter.ofPattern("MM");
 		
 		if(localDate==firstTeusday && localDate.format(formats)=="11") {
 			if(democraticCount>republicanCount) {

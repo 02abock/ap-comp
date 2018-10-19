@@ -8,7 +8,7 @@ public class enhancedsavingsAccount {
 		intrest= initialIntrest;
 		fee=intialFee;
 		freeTransactions=MonthlyFreeTranscations;
-		formattedDate=formatter.format(LocalDate.now());
+		formattedDate= Integer.parseInt(LocalDate.now().format(formatter));
 		freeTransactionsResseter=MonthlyFreeTranscations;
 
 	}public  enhancedsavingsAccount ()
@@ -24,9 +24,9 @@ public class enhancedsavingsAccount {
 	}
 	public void deposit(double amount)
 	{
-		if (formattedDate==formatter.format(LocalDate.now())) {
+		if (formattedDate==Integer.parseInt(LocalDate.now().format(formatter))) {
 		
-if (freeTransactions<=0){
+if (freeTransactions==0){
 	balance+= amount;
 	
 	
@@ -48,7 +48,7 @@ else {
 		
 	public void withdraw(double amount)
 	{
-		if (formattedDate==formatter.format(LocalDate.now())) {
+		if (formattedDate==Integer.parseInt(LocalDate.now().format(formatter))) {
 			
 			if (freeTransactions==0){
 				balance-= amount;
@@ -83,7 +83,7 @@ else {
 	private double fee;
 	private int freeTransactions;
 	private int freeTransactionsResseter;
-	private String formattedDate;
-	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
+	private int formattedDate;
+	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYYMM");
 	}
 	
