@@ -25,10 +25,10 @@ public class VotingMachine {
 	public String getvoteCount()
 	{
 		LocalDate localDate= LocalDate.now();
-		LocalDate firstTeusday= localDate.with(firstInMonth(DayOfWeek.TUESDAY));
+		LocalDate firstTeusday= localDate.with(DayOfWeek.TUESDAY);
 		DateTimeFormatter formats=DateTimeFormatter.ofPattern("MM");
 		
-		if(localDate==firstTeusday && localDate.format(formats)=="11") {
+		if(localDate==firstTeusday && localDate.format(formats)=="10") {
 			if(democraticCount>republicanCount) {
 				return "Democratis won the race";
 			}

@@ -10,7 +10,7 @@ public class letter {
 	
 	public void addLine(String line)
 	{
-		message.concat("\n").concat(line);
+		message=message.concat("\n").concat(line);
 	}public String getText()
 	{
 		return message;
