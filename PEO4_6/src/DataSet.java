@@ -13,5 +13,5 @@ public class DataSet
 		max=Math.max(max, x);
 		min=Math.min(min, x);		
 	}
-	public int
+	
 }

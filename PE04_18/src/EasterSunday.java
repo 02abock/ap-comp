@@ -1,6 +1,6 @@
 public class EasterSunday{
 	public static void main(String voids[]) {
-	int y=2001;
+	int y=2019;
 	int a = y%19;
 	int b =y/100;
 	int c=y%100;

@@ -8,8 +8,16 @@ public class TimeDifferance{
 		int firstTime= in.nextInt();
 		System.out.print("EnterSecondTime: ");
 		int SecondTime= in.nextInt();
-		System.out.println(Math.abs(firstTime-SecondTime));
-		
+		int firsthour=firstTime/100;
+		int secondhour=(SecondTime-100)/100;
+
+		int firstminutes=firstTime%100;
+
+		int Secondminutes=SecondTime%100;
+
+		System.out.print(Math.abs(firsthour -secondhour) );
+		System.out.print(firstminutes-Secondminutes);
+
 
 	}
 }
