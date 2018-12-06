@@ -8,19 +8,21 @@ public class ProjectileFlight{
 		Double distance=0.0;
 		Double gravity=9.81;
 		int counter=0;
+		ProjectileEquationClass tester= new ProjectileEquationClass(velocity);
 
-		while(velocity>0) {
+		do {
 			
 			distance=distance+(velocity*deltaT);
 			velocity=velocity-(gravity*deltaT);
-	
-			counter+=1;
-		
-			if(counter==100) {
+			counter++;
+				if(counter%100==0) {
 				System.out.println(distance);
-				counter=0;
-			}
-		}
-	
+				System.out.println("exspected"+ tester.claculate(counter));
+			} 
+		}while(distance>0.0);
+		System.out.println(distance);
+		System.out.println("exspected"+ tester.claculate(counter));
+
+		
 	}
 }	
