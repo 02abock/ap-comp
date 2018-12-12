@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
    This program calculates the exponential function.
 */
-public class Main
+public class printer
 {
    public static void main(String[] args)
    {
@@ -14,9 +14,10 @@ public class Main
 
       ExpApproximator exp = new ExpApproximator(x, epsilon);
 
-      while(exp.hasMoreGuesses())
+      while(exp.hasMoreGuesses()) {
          System.out.println(exp.nextGuess());
+      }
 
-      System.out.println("" + Math.pow(Math.E,x) + " <- Actual");
+     
    }
 }
