@@ -12,7 +12,7 @@ public class printer
       double x = in.nextDouble();
       double epsilon = 1E-12;
 
-      ExpApproximator exp = new ExpApproximator(x, epsilon);
+      RootApproximator exp = new RootApproximator(x, epsilon);
 
       while(exp.hasMoreGuesses()) {
          System.out.println(exp.nextGuess());

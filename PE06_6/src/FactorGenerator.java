@@ -8,20 +8,18 @@ public class FactorGenerator {
 	
 	public int nextFactor() {
 		int x = 2;
-		boolean neverFound = true;
-		
+		boolean found = true;
 		if (num>2) {
-			while (neverFound) {
+			while (found) {
 				if (num%x == 0) {
 					num /= x;
 					return x;
 				}
 				x++;
 			}
-		}
+		}	
 		return 1;
 	}
-	
 	public boolean hasMoreFactors() {
 		return (num > 2);
 	}

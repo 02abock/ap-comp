@@ -14,4 +14,6 @@
 		<item value="202" key="DIALOG_X_ORIGIN"/>
 		<item value="32" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
 </section>
