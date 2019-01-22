@@ -1,4 +1,5 @@
 import java.awt.geom.Ellipse2D;
+import java.lang.Math;
 import java.awt.geom.Point2D;
 public class Geometry {
 	public static double perimeter(Ellipse2D.Double e) {
@@ -11,6 +12,12 @@ public class Geometry {
 		return Math.PI*e.getHeight()*e.getWidth();
 	}
 	public static double angle(Point2D.Double p, Point2D.Double q) {
-		return 1.0;
+		return Math.atan(slope(p,q));
+	} 
+	public static double slope(Point2D.Double p,Point2D.Double q) {
+		return (p.getY()-q.getY())/(p.getX()-q.getX());
+	}
+	public static boolean isInside(Point2D.Double p, Ellipse2D.Double e) {
+		
 	}
 }
