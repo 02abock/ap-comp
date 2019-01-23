@@ -39,9 +39,9 @@ if(temp.substring(3,4).equals("|"))
 else{
 	System.out.println("");
 	input+="a";
-for(int i=1;i>6;i++){
+for(int i=1;i<6;i++){
 	String output ="";
-	int temp=Integer.valueOf(input.substring(i,i++));
+	int temp=Integer.parseInt(input.substring(i,i++));
 	if(temp==0) {
 		output="||:::";
 	}
