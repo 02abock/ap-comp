@@ -48,8 +48,7 @@ public class CashRegister
    */
    public int giveChange(money Type)
    {
-      change = (int)((pa
-    		  +yment - purchase)*100);
+      change = (int)((payment - purchase)*100);
       purchase = 0;
       payment = 0;
       int toReturn = change/(int)Type.getValue();
