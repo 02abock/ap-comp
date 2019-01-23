@@ -6,23 +6,30 @@ System.out.println("enter a zip code: alterntivly enter a 1 to enter a barcode")
 int inputInt=sc.nextInt();
 String input= String.valueOf(inputInt);
 
+System.out.println(input);
 if(inputInt==1){
 System.out.println("enter a barcode code:");
+int nums = 95014;
  input=sc.next();
  input+="a";
 System.out.println("the zip code is");
-for( int i=0;i<29;i+=5){
-	String temp=input.substring(i,i+5);
+for( int i=0;i<29;i+=6){
+	String temp=input.substring(i,i+6);
+	System.out.println(temp);
+
 int fac7=0;
-if(temp.substring(0,1).equals("|"))
-	fac7=1;
-int fac4=0;
 if(temp.substring(1,2).equals("|"))
+	fac7=1;
+System.out.println(fac7);
+
+int fac4=0;
+if(temp.substring(2,3).equals("|"))
 	fac4=1;
-int fac2=0;if(temp.substring(2,3).equals("|"))
+int fac2=0;
+if(temp.substring(3,4).equals("|"))
 	fac2=1;
 int fac1=0;
-if(temp.substring(3,4).equals("|"))
+if(temp.substring(4,5).equals("|"))
 	fac1=1;
 	int num =(7*fac7)+(4*fac4)+(2*fac2)+fac1;
 	if(num==11){
@@ -38,10 +45,14 @@ if(temp.substring(3,4).equals("|"))
 }
 else{
 	System.out.println("");
-	input+="a";
-for(int i=1;i<6;i++){
+	input+="0";
+	System.out.println(input);
+
+for(int i=0;i<5;i++){
 	String output ="";
-	int temp=Integer.parseInt(input.substring(i,i++));
+	
+	int temp=Integer.parseInt(input.substring(i,i+1));
+	
 	if(temp==0) {
 		output="||:::";
 	}

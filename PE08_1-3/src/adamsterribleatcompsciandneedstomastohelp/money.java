@@ -1,3 +1,5 @@
+package adamsterribleatcompsciandneedstomastohelp;
+
 
 
 public class money  {	

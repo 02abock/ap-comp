@@ -1,3 +1,6 @@
+package adamsterribleatcompsciandneedstomastohelp;
+
+
 import java.util.logging.Logger;
 
 /**
