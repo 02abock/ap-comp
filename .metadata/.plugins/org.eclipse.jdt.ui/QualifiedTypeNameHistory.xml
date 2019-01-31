@@ -9,7 +9,7 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.awt.geom.Point2D.Double"/>
     <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="adamsterribleatcompsciandneedstomastohelp.CashRegister"/>
     <fullyQualifiedTypeName name="adamsterribleatcompsciandneedstomastohelp.money"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

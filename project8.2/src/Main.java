@@ -11,25 +11,22 @@ if(inputInt==1){
 System.out.println("enter a barcode code:");
 int nums = 95014;
  input=sc.next();
- input+="a";
+ input+=":";
 System.out.println("the zip code is");
-for( int i=0;i<29;i+=6){
-	String temp=input.substring(i,i+6);
-	System.out.println(temp);
+for( int i=0;i<24;i+=5){
+	String temp=input.substring(i,i+5);
 
 int fac7=0;
-if(temp.substring(1,2).equals("|"))
+if(temp.substring(0,1).equals("|"))
 	fac7=1;
-System.out.println(fac7);
-
 int fac4=0;
-if(temp.substring(2,3).equals("|"))
+if(temp.substring(1,2).equals("|"))
 	fac4=1;
 int fac2=0;
-if(temp.substring(3,4).equals("|"))
+if(temp.substring(2,3).equals("|"))
 	fac2=1;
 int fac1=0;
-if(temp.substring(4,5).equals("|"))
+if(temp.substring(3,4).equals("|"))
 	fac1=1;
 	int num =(7*fac7)+(4*fac4)+(2*fac2)+fac1;
 	if(num==11){
@@ -52,7 +49,6 @@ for(int i=0;i<5;i++){
 	String output ="";
 	
 	int temp=Integer.parseInt(input.substring(i,i+1));
-	
 	if(temp==0) {
 		output="||:::";
 	}
@@ -64,26 +60,34 @@ for(int i=0;i<5;i++){
 		if(temp>=7) {
 			output+="|";
 			temp-=7;
-			System.out.print(output);
 
+		}
+		else {
+			output+=":";
 		}
 		if(temp>=4) {
 			output+="|";
 			temp-=4;
-			System.out.print(output);
 
+		}
+		else {
+			output+=":";
 		}
 		if(temp>=2) {
 			output+="|";
 			temp-=2;
-			System.out.print(output);
 
+		}
+		else {
+			output+=":";
 		}
 		if(temp>=1) {
 			output+="|";
 			temp-=1;
-			System.out.print(output);
 
+		}
+		else {
+			output+=":";
 		}
 		if(flag) {
 			output+="|";
@@ -98,4 +102,4 @@ for(int i=0;i<5;i++){
 }	
 }
 
-}
+}				

@@ -1,0 +1,1 @@
+Public class Quiz implements measurable

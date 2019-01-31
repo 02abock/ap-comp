@@ -9,6 +9,14 @@
       <title>eclipse.org</title>
       <link>http://www.eclipse.org</link>
     </image>
+     <item>
+      <title><![CDATA[Jakartablogs.ee is Live! PS: Bloggers, We Need You!]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/thabang-mashologu/jakartablogsee-live-ps-bloggers-we-need-you]]></link>
+      <description><![CDATA[Jakartablogs.ee is the new blog home for our global community to stay up to date on the latest Jakarta EE news, technologies, best practices, and more.]]></description>
+      <pubDate>Tue, 29 Jan 2019 15:20:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
     <item>
       <title><![CDATA[Eclipse Specification Process IV: The Specification Committee Votes]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/wayne-beaton/eclipse-specification-process-iv-specification-committee-votes]]></link>
