@@ -12,4 +12,7 @@
     <fullyQualifiedTypeName name="adamsterribleatcompsciandneedstomastohelp.CashRegister"/>
     <fullyQualifiedTypeName name="adamsterribleatcompsciandneedstomastohelp.money"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Formattable"/>
+    <fullyQualifiedTypeName name="java.util.Formatter"/>
+    <fullyQualifiedTypeName name="java.util.Formatter.BigDecimalLayoutForm"/>
 </qualifiedTypeNameHistroy>

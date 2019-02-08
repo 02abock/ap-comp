@@ -16,6 +16,8 @@ public class DieSimulation
       }
 
       System.out.println();
-      System.out.println("Average: " + ds.getAverage());      
+      System.out.println("Average: " + ds.getAverage());     
+      
+      System.out.println("Minamum"+ ds.getMinamum());
    }
 }
