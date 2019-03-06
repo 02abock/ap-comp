@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.Formattable;
 import java.util.Formatter;
 
@@ -6,8 +5,11 @@ import java.util.Formatter;
    A bank account has a balance that can be changed by 
    deposits and withdrawals.
 */
-public class BankAccount implements Formattable, Appendable
+public class BankAccount implements Formattable
 {  
+	int w = 10;
+	private String t = "";
+	Formatter k;
    /**
       Constructs a bank account with a zero balance.
    */
@@ -22,7 +24,9 @@ public class BankAccount implements Formattable, Appendable
    */
    public BankAccount(double initialBalance)
    {   
+	   
       balance = initialBalance;
+      
    }
 
    /**
@@ -51,23 +55,31 @@ public class BankAccount implements Formattable, Appendable
    */
    public double getBalance()
    {   
+	   
       return balance;
    }
 
    private double balance;
 
-@Override
-public void formatTo(Formatter formatter, int flags, int width, int precision) {
-	// TODO Auto-generated method stub
-	Appendable a = formatter.out();
-	temp=String.valueOf(balance);
-	a.append(temp);
 
+public void formatTo(Formatter fmt, int flags, int width, int precision) {
+	StringBuilder sb = new StringBuilder();
+	t = Double.toString(balance);
+	int len = sb.length();
+	if (len < width)
+		 for (int i = 0; i < width - len; i++)
+        {
+        	sb.append(' ');
+        	
+        }
+	int y = t.length();
+	sb.delete(0, y);
+	sb.insert(sb.length(), balance);
+	
+	System.out.print(sb.toString());
+	
+	
 }
-public Appendable append(CharSequence csq) {
-	;
 
-}
-private String temp=null;
 }
 

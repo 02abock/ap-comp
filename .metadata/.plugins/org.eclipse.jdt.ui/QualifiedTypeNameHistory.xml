@@ -15,4 +15,6 @@
     <fullyQualifiedTypeName name="java.util.Formattable"/>
     <fullyQualifiedTypeName name="java.util.Formatter"/>
     <fullyQualifiedTypeName name="java.util.Formatter.BigDecimalLayoutForm"/>
+    <fullyQualifiedTypeName name="java.awt.Rectangle"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>
