@@ -5,7 +5,7 @@ public class TimeDepositAccount extends  BankAccount{
 		monthspassed=0;
 		intrestRate=givenIntrestRate;
    }
-	public void addIntrest() {
+	public void addInterest() {
 		double Intrest =getBalance()*intrestRate;
 		deposit(Intrest);
 		monthspassed++;
@@ -13,7 +13,7 @@ public class TimeDepositAccount extends  BankAccount{
 	public void withdrawl(double toWithdrawl) {
 		if (monthspassed<5) {
 			withdraw(100);
-			System.out.println("i fine was applied");
+			System.out.println("a fine was applied");
 		}
 		withdraw(toWithdrawl);
 	}

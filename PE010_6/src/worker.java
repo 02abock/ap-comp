@@ -1,5 +1,5 @@
-public class Employee{
-	public Employee(String GivenName, int givenSalery) {
+public class worker{
+	public worker(String GivenName, Double givenSalery) {
 		name=GivenName;
 		salery=givenSalery;
 	}
@@ -12,13 +12,10 @@ public class Employee{
 	public void setName(String givenName) {
 		name=givenName;
 	}
-	public void setSalery(int givenSalery) {
+	public void setSalery(Double givenSalery) {
 		salery= givenSalery;
-	}
-	public  String toString() {
-		return"Employee[name="+name+",salary="+String.valueOf(salery)+"]";
 	}
 	
 	String name="";
-	int salery;
+	Double salery;
 }
