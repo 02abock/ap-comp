@@ -29,8 +29,8 @@ public class polygon{
 		 int [] yArrayTemp=new int [l-1];
 			 int k=0;
 			 for(int i=0; i<xArray.length; i++) {
-				 if(i==1) {k=1;
-					 
+				 if(i==1) {
+					 k=1;
 				 }
 				 else{
 				 xArrayTemp[i-k]=xArray[i];
