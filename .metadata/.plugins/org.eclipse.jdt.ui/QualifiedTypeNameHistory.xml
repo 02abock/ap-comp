@@ -3,18 +3,18 @@
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.awt.geom.Point2D"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.awt.geom.Point2D.Double"/>
     <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
     <fullyQualifiedTypeName name="adamsterribleatcompsciandneedstomastohelp.CashRegister"/>
     <fullyQualifiedTypeName name="adamsterribleatcompsciandneedstomastohelp.money"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Formattable"/>
     <fullyQualifiedTypeName name="java.util.Formatter"/>
     <fullyQualifiedTypeName name="java.util.Formatter.BigDecimalLayoutForm"/>
     <fullyQualifiedTypeName name="java.awt.Rectangle"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

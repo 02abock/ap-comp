@@ -103,9 +103,7 @@ public class Maze{
     }
     System.out.println();
 	}
-	System.out.println("row"+PostionRow);
-		System.out.println("colum"+PostionColum);
-
+	
 }
 	public boolean moveLeft(){
 
