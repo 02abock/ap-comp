@@ -24,4 +24,6 @@
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>
